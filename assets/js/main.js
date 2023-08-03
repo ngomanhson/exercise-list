@@ -33,7 +33,7 @@ const allData = [
         <td>${item.session}</td>
         <td>${item.date}</td>
         <td>${item.quantity}</td>
-        <td><a href="${item.link}" data-page="${pageNumber}">Views</a></td>
+        <td><a href="${item.link}" data-page="${pageNumber}" target="_blank">Views</a></td>
       `;
       tableBody.appendChild(row);
     }
