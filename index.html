@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>F8 - Exercises</title>
+
+        <!-- Embed  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <div class="inner">
+            <aside class="sidebar">
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="#!">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="#!">
+                            <i class="fa-regular fa-folder-open"></i>
+                            <span>Exercises</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/NgoManhson/f8-fullstack-exercises.git" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Github</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content">
+                <div class="container">
+                    <nav class="navbar">
+                        <form action="#!">
+                            <input type="text" name="search" id="search" placeholder="Type something..." required />
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                        <ul class="nav-option">
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-sun"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-bell fa-shake"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <img src="./assets/images/avatar.png" alt="Ngô Mạnh Sơn" title="Ngô Mạnh Sơn" class="avatar-user" />
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="content-text">
+                        <h1 class="content-text__heading">Welcome to the website</h1>
+                        <p class="content-text__desc">Here is the homework list</p>
+                    </div>
+
+                    <div class="exercise">
+                        <div class="exercise-inner">
+                            <div class="exercise-list">
+                                <table class="table">
+                                    <thead>
+                                        <th>Session</th>
+                                        <th>Date created</th>
+                                        <th>Quantity</th>
+                                        <th>Action</th>
+                                    </thead>
+
+                                    <tbody id="tableBody"></tbody>
+                                </table>
+                                <div id="pagination"></div>
+                            </div>
+                            <div class="deco">
+                                <img src="./assets/images/image-deco.jpg" alt="Japanese" class="img-deco" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <p class="footer-desc">Copyright © 2023 from <a href="https://www.facebook.com/NgoManhSon.23">Ngo Manh Son</a></p>
+                </footer>
+            </div>
+            <div id="setting-trigger">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+        </div>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

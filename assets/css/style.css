@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #4b49ac;
+    --white: #fff;
+    --black: #000;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Nunito", sans-serif;
+    background: #f5f7ff;
+}
+
+/* ===== Common ===== */
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner {
+    display: flex;
+    gap: 30px;
+}
+
+.container {
+    width: 1200px;
+    max-width: calc(100% - 50px);
+    margin: 0 auto;
+}
+
+input,
+button,
+textarea {
+    font-family: "Nunito", sans-serif;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    width: 17%;
+    height: 100vh;
+    background: var(--white);
+    padding: 15px;
+}
+
+.sidebar-list li a {
+    display: block;
+    color: #6c7383;
+    background: var(--white);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.sidebar-list li a:hover,
+.sidebar-list li a.active {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* ===== Content ===== */
+.content {
+    margin-top: 15px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar form {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar #search {
+    position: relative;
+    padding: 10px 35px 10px 10px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: #6c7383;
+    caret-color: var(--primary);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navbar #search:focus {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.navbar #search:focus ~ button > i.fa-magnifying-glass {
+    color: var(--primary);
+}
+
+.navbar i.fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #6c7383;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-option {
+    display: flex;
+    align-items: center;
+}
+
+.nav-option li {
+    margin-left: 20px;
+}
+
+.avatar-user {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+/* ===== Content text ===== */
+.content-text {
+    margin-top: 15px;
+}
+
+.content-text__heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2;
+    color: var(--black);
+}
+
+.content-text__desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--black);
+}
+
+/* ===== List exercise ===== */
+.exercise-inner {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.exercise-list {
+    width: 48%;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--white);
+}
+
+.table {
+    width: 100%;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > td {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #888da9;
+    font-weight: 400;
+}
+
+.table > tbody > tr > td {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 2.2;
+    text-align: center;
+}
+
+.table > tbody > tr > td > a {
+    color: inherit;
+    padding: 3px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.table > tbody > tr > td > a:hover {
+    left: 100%;
+    background: var(--primary);
+    color: var(--white);
+}
+
+#pagination {
+    margin-top: 10px;
+    padding: 0 20px;
+    text-align: right;
+}
+
+#pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+#pagination a.active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+#pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+#pagination a.disabled {
+    pointer-events: none;
+    color: #ccc;
+    border-color: #ccc;
+}
+
+.deco {
+    width: 48%;
+    border-radius: 8px;
+}
+
+.img-deco {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+/* ===== Setting ===== */
+#setting-trigger {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    height: 45px;
+    width: 45px;
+    background: var(--primary);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+#setting-trigger i {
+    color: var(--white);
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===== Footer ===== */
+.footer {
+    margin: 50px 0;
+}
+
+.footer-desc {
+    font-size: 1.2rem;
+    color: #737f8b;
+    text-align: center;
+}
+
+.footer-desc a {
+    color: var(--primary);
+}
