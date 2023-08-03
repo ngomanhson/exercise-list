@@ -132,6 +132,10 @@ textarea {
     margin-left: 20px;
 }
 
+.nav-option > li > a . i {
+    color: var(--primary);
+}
+
 .avatar-user {
     width: 30px;
     height: 30px;
