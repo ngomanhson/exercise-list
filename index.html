@@ -16,10 +16,12 @@
 
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Gird System -->
+        <link rel="stylesheet" href="./assets/css/grid.css" />
     </head>
     <body>
-        <div class="inner">
-            <aside class="sidebar">
+        <!-- <aside class="sidebar">
                 <ul class="sidebar-list">
                     <li>
                         <a href="#!">
@@ -40,68 +42,73 @@
                         </a>
                     </li>
                 </ul>
-            </aside>
-            <div class="content">
-                <div class="container">
-                    <nav class="navbar">
-                        <form action="#!">
-                            <input type="text" name="search" id="search" placeholder="Type something..." required />
-                            <button type="submit">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </form>
-                        <ul class="nav-option">
-                            <li>
-                                <a href="#!">
-                                    <i class="fa-solid fa-sun"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <i class="fa-solid fa-bell fa-shake"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <img src="./assets/images/avatar.png" alt="Ngô Mạnh Sơn" title="Ngô Mạnh Sơn" class="avatar-user" />
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            </aside> -->
+        <div class="content">
+            <div class="container">
+                <nav class="navbar">
+                    <form action="#!">
+                        <input type="text" name="search" id="search" placeholder="Type something..." required />
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <ul class="nav-option">
+                        <li>
+                            <a href="#!">
+                                <i class="fa-solid fa-sun"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <i class="fa-solid fa-bell fa-shake"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <img src="./assets/images/avatar.png" alt="Ngô Mạnh Sơn" title="Ngô Mạnh Sơn" class="avatar-user" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-                    <div class="content-text">
-                        <h1 class="content-text__heading">Welcome to the website</h1>
-                        <p class="content-text__desc">Here is the homework list</p>
-                    </div>
+                <div class="content-text">
+                    <h1 class="content-text__heading">Welcome to the website</h1>
+                    <p class="content-text__desc">Here is the homework list</p>
+                </div>
 
-                    <div class="exercise">
-                        <div class="exercise-inner">
-                            <div class="exercise-list">
-                                <table class="table">
-                                    <thead>
-                                        <th>Session</th>
-                                        <th>Date created</th>
-                                        <th>Quantity</th>
-                                        <th>Action</th>
-                                    </thead>
+                <div class="exercise">
+                    <div class="exercise-inner">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="exercise-list">
+                                    <table class="table">
+                                        <thead>
+                                            <th>Session</th>
+                                            <th>Date created</th>
+                                            <th>Quantity</th>
+                                            <th>Action</th>
+                                        </thead>
 
-                                    <tbody id="tableBody"></tbody>
-                                </table>
-                                <div id="pagination"></div>
+                                        <tbody id="tableBody"></tbody>
+                                    </table>
+                                    <div id="pagination"></div>
+                                </div>
                             </div>
-                            <div class="deco">
-                                <img src="./assets/images/image-deco.jpg" alt="Japanese" class="img-deco" />
+                            <div class="col-lg-6 col-md-6 col-6">
+                                <div class="decor">
+                                    <img src="./assets/images/image-deco.jpg" alt="Japanese" class="img-decor" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <footer class="footer">
-                    <p class="footer-desc">Copyright © 2023 from <a href="https://www.facebook.com/NgoManhSon.23" target="_blank">Ngo Manh Son</a></p>
-                </footer>
             </div>
-            <div id="setting-trigger">
-                <i class="fa-solid fa-gear"></i>
-            </div>
+            <footer class="footer">
+                <p class="footer-desc">Copyright © 2023 from <a href="https://github.com/ngomanhson" target="_blank">Ngo Manh Son</a></p>
+            </footer>
+        </div>
+        <div id="setting-trigger">
+            <i class="fa-solid fa-gear"></i>
         </div>
 
         <script src="./assets/js/main.js"></script>
